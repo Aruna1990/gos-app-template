@@ -1,9 +1,6 @@
 import React from 'react';
-import { Layout, Menu, Dropdown, Button } from 'antd';
-// import { API_ROOT } from '../../api';
+import { Layout, Menu } from 'antd';
 import {
-  // QrcodeOutlined,
-  DownOutlined,
   MenuUnfoldOutlined,
   MenuFoldOutlined,
 } from '@ant-design/icons';
@@ -11,7 +8,7 @@ import './index.css';
 import { Link } from "react-router-dom";
 import Iconfont from '../../components/Iconfont';
 const { Header, Content } = Layout;
-export default class MainFrame extends React.Component {
+export default class AdminFrame extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -46,7 +43,7 @@ export default class MainFrame extends React.Component {
     return (
       <Layout className="site-layout-app">
         <Header className="site-layout-background">
-          <div className="logo" title="回到桌面"><a href="../"><img src={process.env.PUBLIC_URL + "/images/logo.png"}/></a></div>
+          <div className="logo" title="回到桌面"><a href="../"><img alt="logo" src={process.env.PUBLIC_URL + "/images/logo.png"}/></a></div>
           <div className="menu-wrap">
             <Menu mode="horizontal">
               <Menu.Item key="/stereo"><a href="#/stereo">{this.props.title}</a></Menu.Item>
@@ -97,7 +94,7 @@ export default class MainFrame extends React.Component {
             marginBottom: 16,
             color: 'rgba(0, 0, 0, 0.85)',
           }}>{this.selectedMenuName()}</h3>
-          <div style={{margin: 16, height: 'calc(100vh - 156px)' }}>{this.props.children}</div>
+          <div style={{ height: 'calc(100vh - 156px)' }}>{this.props.children}</div>
         </Content>
       </Layout>
     );

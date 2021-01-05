@@ -1,3 +1,52 @@
+.ant-layout-header .menu-wrap.pure-color{
+   width: 1010px;
+   margin: 0 auto;
+   background-image: none;
+   padding: 0 160px;
+   height: 100%;
+}
+.ant-menu-horizontal > .ant-menu-item, .ant-menu-horizontal > .ant-menu-submenu{
+  font-size: 22px;
+  color: rgba(255,255,255,1);
+  top: 0;
+  border-bottom: none;
+}
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item,
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu,
+.site-layout-admin .ant-menu-horizontal > .ant-menu-item-selected,
+.site-layout-admin .ant-menu-horizontal > .ant-menu-submenu-selected{
+  font-weight: normal;
+  color: rgba(255,255,255,1);
+  border: none;
+  margin: 0;
+  padding: 0 28px;
+}
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.site-layout-admin .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.site-layout-admin .ant-menu-horizontal > .ant-menu-item-selected,
+.site-layout-admin .ant-menu-horizontal > .ant-menu-submenu-selected{
+  background:rgba(80, 139, 238,1);
+  font-weight: normal;
+}
+.ant-layout-header .menu-wrap{
+   height: 100%;
+   display: inline-block;
+}
+.logo {
+  display: inline-block;
+  margin-right: 32px;
+}
+.logo img {
+  width: 92px;
+  vertical-align: middle;
+}
 .site-layout-app{
   background-color: #0c1d2c;
   overflow: auto;
@@ -34,9 +83,10 @@
 }
 .ant-layout-header{
   height: 48px;
-  background: rgba(47, 55, 83, 1);
+  background: #2F3753;
   padding: 0 30px;
   line-height: 48px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .ant-layout-header .ant-menu{
   line-height: 48px;

@@ -1,0 +1,44 @@
+.ant-list-items{
+  height: calc(100% - 111px);
+  overflow: auto;
+  .ant-list-item{
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    height: 240px;
+    position: relative;
+    min-width: 120px;
+    background: rgba(0, 0, 0, 0.25);
+    .image-list-item{
+      height: 100%;
+      text-align: center;
+      width: 100%;
+      img{
+        max-height: 100%;
+      }
+      .label-select{
+        position: absolute;
+        left: 8px;
+        bottom: 8px;
+        .ant-select-selector{
+          background: #508BEE;
+          border-color: #508BEE;
+          .ant-select-selection-item{
+            color: #fff;
+          }
+        }
+        .ant-select-arrow{
+          color: #fff;
+        }
+        :hover, :active, :focus{
+          box-shadow: none;
+          background: #508BEE rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+  }
+}
+.ant-list{
+  height: calc(100% - 65px);
+  overflow: auto;
+}

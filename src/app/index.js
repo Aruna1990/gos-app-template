@@ -1,32 +1,32 @@
 import React from 'react';
-import AdminFrame from '../layouts/AdminFrame';
+import MainFrame from '../layouts/MainFrame';
 import {
   Switch,
   Route,
   Redirect
 } from "react-router-dom";
-import { adminRoutes } from '../routes';
+import { appRoutes } from '../routes';
 
-function Admin(props) {
+function App(props) {
   return (
-    <AdminFrame menuData={adminRoutes} title={props.title}>
+    <MainFrame menuData={appRoutes} title={props.title}>
       <Switch>
-        {adminRoutes.map(route => {
+        {appRoutes.map(route => {
           return (
             <Route
               key={route.path}
               path={route.path}
               exact={route.exact}
               render={routeProps => {
-              return <route.component {...routeProps} />
+                return <route.component {...routeProps} />
               }}
             />
           )
         })}
         <Redirect to='/list' />
       </Switch>
-    </AdminFrame>
+    </MainFrame>
   );
 }
 
-export default Admin;
+export default App;

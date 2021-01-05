@@ -1,11 +1,18 @@
-import DeviceList from '../admin/DeviceList';
+import AIList from '../app/AIList';
+import AIDetails from '../app/AIDetails';
 
-export const adminRoutes = [
-	{
-		name: '广播设备管理',
-		path: '/list',
-		component: DeviceList,
-		icon: 'iconmenu-guangboshebeiguanli'
-	}
+export const appRoutes = [
+  {
+    name: '算法管理',
+    path: '/list',
+    component: AIList,
+    icon: 'iconmenu-guangboshebeiguanli'
+  },
+  {
+    name: '算法详情',
+    path: '/details/:id/:step',
+    component: AIDetails,
+    icon: 'iconmenu-guangboshebeiguanli',
+    hide: true,
+  }
 ];
-
